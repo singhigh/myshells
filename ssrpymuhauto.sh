@@ -6,4 +6,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/serverspe
 pip install cymysql
 git clone -b manyuser https://github.com/breakwa11/shadowsocks.git
 cd shadowsocks
+chmod 777 *.sh
+echo after setting the configuration, you may type bash run.sh to run the server.
 vim apiconfig.py
+cd ~/shadowsocks
