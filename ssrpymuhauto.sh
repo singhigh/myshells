@@ -1,7 +1,7 @@
 #wget -N --no-check-certificate https://raw.githubusercontent.com/singhigh/myshells/master/ssrpymuhauto.sh && bash ssrpymuhauto.sh
 #curl https://debgen.simplylinux.ch/txt/jessie/sources_02afb983ca66b4136396fe1f3cc5e8052fa5532a.txt | sudo tee /etc/apt/sources.list
 apt-get update
-apt-get install build-essential curl install python-pip m2crypto git vim -y
+apt-get install build-essential curl python-pip m2crypto git vim -y
 wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/serverspeeder/master/serverspeeder-all.sh && bash serverspeeder-all.sh
 pip install cymysql
 wget https://github.com/jedisct1/libsodium/releases/download/1.0.10/libsodium-1.0.10.tar.gz
