@@ -12,7 +12,9 @@ git clone -b manyuser https://github.com/breakwa11/shadowsocks.git
 cd ~/shadowsocks
 chmod 777 *.sh
 cp config.json user-config.json
+cp mysql.json usermysql.json
 echo after setting the configuration, you may type bash run.sh to run the server.
 vim apiconfig.py
+vim usermysql.json
 vim user-config.json
 cd ~/shadowsocks
