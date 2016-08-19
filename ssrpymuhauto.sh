@@ -16,5 +16,7 @@ echo after setting the configuration, you may type bash run.sh to run the server
 vim apiconfig.py
 vim user-config.json
 wget -N --no-check-certificate https://raw.githubusercontent.com/singhigh/myshells/master/restart.sh
-sh logrun.sh
 cd ~/shadowsocks
+./logrun.sh
+echo now type ./tail.sh to show current status
+exit
