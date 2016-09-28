@@ -7,7 +7,9 @@ cd ~/shadowsocks
 chmod 777 *.sh
 cp config.json user-config.json
 cp mysql.json usermysql.json
-echo after setting the configuration, you may type bash run.sh to run the server.
 vim usermysql.json
-vim apiconfig.py
-vim user-config.json
+#把数据库信息复制进去。
+./logrun.sh
+./tail.sh
+#vim apiconfig.py
+#vim user-config.json
