@@ -1,6 +1,5 @@
 apt-get update
-apt-get install python-pip m2crypto git vim -y
-pip install cymysql
+apt-get install python-pip m2crypto git vim curl -y && pip install cymysql
 cd ~/
 git clone -b manyuser https://github.com/breakwa11/shadowsocks.git
 cd ~/shadowsocks
