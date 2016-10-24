@@ -33,15 +33,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 		</style>
 	</head>
 	<body>
+		<h1>倒计时网 tenant8765432.one</h1>
 		<script type="text/javascript">
 			function countDown(hrs,mins,secs) {
 				
 				var secelem = document.getElementById("sec");
-    			secelem.innerHTML = (secs<10 ? "0":"") +  secs + " secs";
+    			secelem.innerHTML = (secs<10 ? "0":"") +  secs + " 秒";
 				var minelem = document.getElementById("min");
-				minelem.innerHTML = (mins<10 ? "0":"") +  mins + " mins";
+				minelem.innerHTML = (mins<10 ? "0":"") +  mins + " 分";
 				var hrelem = document.getElementById("hr");
-				hrelem.innerHTML = (hrs<10 ? "0":"") + hrs + " hrs";
+				hrelem.innerHTML = (hrs<10 ? "0":"") + hrs + " 时";
 				if(secs < 1) {
 					if(mins < 1 && hrs <1) {
 						clearTimeout(timer);
@@ -61,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 		</script>
 		<div  class="btn-group btn-group-justified clock" role="group" aria-label="Justified button group">
 		  <div id="hr" class="btn btn-default" role="button"><? echo $hrs; ?> 时</div>
-		  <div id="min" class="btn btn-default" role="button"><? echo $mins; ?> 分mins</div>
+		  <div id="min" class="btn btn-default" role="button"><? echo $mins; ?> 分</div>
 		  <div id="sec" class="btn btn-success" role="button"><? echo $secs; ?> 秒</div>
 		</div>
 		<script type="text/javascript">countDown(<? echo $hrs; ?>,<? echo $mins; ?>,<? echo $secs; ?>);</script>
