@@ -1,4 +1,7 @@
 apt-get update
+wget https://raw.githubusercontent.com/singhigh/myshells/nodeinstall/shadowsocks.conf
+wget https://raw.githubusercontent.com/singhigh/myshells/nodeinstall/user-config.json
+wget https://raw.githubusercontent.com/singhigh/myshells/nodeinstall/userapiconfig.py
 apt-get install -y git python-pip build-essential supervisor fail2ban libssl-dev python-dev libffi-dev 
 easy_install -U pip
 wget https://github.com/jedisct1/libsodium/releases/download/1.0.10/libsodium-1.0.10.tar.gz --no-check-certificate
